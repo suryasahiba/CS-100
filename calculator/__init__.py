@@ -17,7 +17,7 @@ def ADD():
     sum=a+b
     response = "sum = " + str(sum)
     return response
-@app.route("/sub", methods=["POST"])
+'''@app.route("/sub", methods=["POST"])
 def SUB(): 
     jsonStr = request.get_json()
     jsonObj = json.loads(jsonStr)
@@ -26,7 +26,7 @@ def SUB():
     b=int(jsonObj['N2'])
     sub = a-b
     response = "sub = " + str(sub)
-    return response
+    return response'''
 
 if __name__== "__main__":
     app.run()
